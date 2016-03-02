@@ -1,0 +1,10 @@
+<h1>All books posted here!!</h1>
+<div id="disp">
+ <%= render partial: "display", collection: @books, as: :book %>
+</div>
+</br>
+</br>
+</br>
+<div id="create">
+<%= render partial: "newPar", object: @book %>
+</div>

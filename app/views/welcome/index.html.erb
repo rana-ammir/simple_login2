@@ -1,0 +1,8 @@
+<h1>Welcome to home page</h1></br>
+<% if user_signed_in? %>
+     click on Add Book button to post book
+      <%= link_to "Add Book", new_book_path %></br>
+<% end %>
+	click on All Books button to view all the book posted!
+	<%= link_to "All Books", books_path %>
+

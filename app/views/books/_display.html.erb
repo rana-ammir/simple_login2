@@ -1,0 +1,22 @@
+
+<table>
+	<tr>
+		<th><b>Book Name:</b></th>
+		<th><b>Price:</b></th>
+	</tr>
+	
+	<tr>
+		<th><%=book.name%></th>
+		<th><%=book.price%></th>
+		<% if book.user.id == current_user.id %>
+			<th>
+				<%= link_to 'Delete book' , book_path(book),
+              	method: :delete,
+              	:remote => true,
+              	data: { confirm: 'Are you sure?' } %>
+            </th> 
+        <% end %>
+		
+	</tr>
+
+</table>
