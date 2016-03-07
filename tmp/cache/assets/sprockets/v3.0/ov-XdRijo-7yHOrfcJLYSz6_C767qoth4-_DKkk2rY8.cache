@@ -1,0 +1,11 @@
+I"‚(function() {
+  var addFunction;
+
+  alert('hello');
+
+  addFunction = function() {
+    return alert('hello');
+  };
+
+}).call(this);
+:ET

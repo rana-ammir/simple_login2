@@ -1,0 +1,37 @@
+I"è(function() {
+  var addFunction, divFunction, mulFunction, subFunction;
+
+  addFunction = function() {
+    var a, b, c;
+    a = Number(document.getElementById('val1').value);
+    b = Number(document.getElementById('val2').value);
+    c = a + b;
+    document.getElementById('res1').innerHTML = c;
+  };
+
+  subFunction = function() {
+    var a, b, c;
+    a = Number(document.getElementById('val1').value);
+    b = Number(document.getElementById('val2').value);
+    c = a - b;
+    document.getElementById('res1').innerHTML = c;
+  };
+
+  mulFunction = function() {
+    var a, b, c;
+    a = Number(document.getElementById('val1').value);
+    b = Number(document.getElementById('val2').value);
+    c = a * b;
+    document.getElementById('res1').innerHTML = c;
+  };
+
+  divFunction = function() {
+    var a, b, c;
+    a = Number(document.getElementById('val1').value);
+    b = Number(document.getElementById('val2').value);
+    c = a / b;
+    document.getElementById('res1').innerHTML = c;
+  };
+
+}).call(this);
+:ET

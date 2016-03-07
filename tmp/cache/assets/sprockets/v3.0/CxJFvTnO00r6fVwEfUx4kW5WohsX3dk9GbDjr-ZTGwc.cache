@@ -1,0 +1,15 @@
+I"õ(function() {
+  window.addFunction = function() {
+    return alert('hello');
+  };
+
+  $(function() {
+    var addFunction1;
+    window.addFunction();
+    return addFunction1 = function() {
+      return alert('hello');
+    };
+  });
+
+}).call(this);
+:ET
